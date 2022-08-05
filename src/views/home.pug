@@ -10,5 +10,14 @@ html(lang="en")
         header 
             h1 Noom
         main 
-            h2 Welcome to Noom
+            ul
+            form#nickForm
+                input(type="text" placeholder="write your nickname" required)
+                button Save
+            div#curNick
+                span Your current nickname is
+                span
+            form#msgForm
+                input(type="text" placeholder="write your msg" required)
+                button Send 
         script(src="public/js/app.js")
