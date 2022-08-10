@@ -10,14 +10,23 @@ html(lang="en")
         header 
             h1 Noom
         main 
-            ul
-            form#nickForm
-                input(type="text" placeholder="write your nickname" required)
-                button Save
-            div#curNick
-                span Your current nickname is
-                span
-            form#msgForm
-                input(type="text" placeholder="write your msg" required)
-                button Send 
-        script(src="public/js/app.js")
+            div#nickDiv
+                h2
+                form#nickForm
+                    input(type="text" placeholder="write nickname" required)
+                    button Save
+            div#roomDiv
+                h2
+                h3
+                form#roomForm
+                    input(type="text" placeholder="write room name" required)
+                    button Create
+                h4 Current rooms:
+                ul
+            div#msgDiv
+                form#msgForm
+                    input(type="text" placeholder="write your msg" required)
+                    button Send
+                ul
+        script(src="/socket.io/socket.io.js") 
+        script(src="/public/js/app.js")
