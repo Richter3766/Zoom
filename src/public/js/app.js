@@ -1,7 +1,7 @@
 const socket = io();
 
 const myFace = document.querySelector("#myFace");
-const selectCam = document.querySelector("#select-cam");\
+const selectCam = document.querySelector("#select-cam");
 
 const muteBtn = myFace.querySelector("#mute");
 const cameraBtn = myFace.querySelector("#camera");
